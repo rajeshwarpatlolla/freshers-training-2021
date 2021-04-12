@@ -1,11 +1,17 @@
 <template>
-  <div id="app-content">
+  <v-app>
     <router-view />
-  </div>
+  </v-app>
 </template>
 
-<style lang="scss">
-body {
-  margin: 0;
-}
-</style>
+<script>
+export default {
+  name: 'App',
+
+  components: {},
+
+  data: () => ({
+    //
+  }),
+};
+</script>

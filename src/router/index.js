@@ -23,6 +23,11 @@ const routes = [
     name: 'dashboard',
     component: () => import(/* webpackChunkName: "dashboard" */ '../views/Dashboard.vue'),
   },
+  {
+    path: '/apidemo',
+    name: 'ApiDemo',
+    component: () => import(/* webpackChunkName: "apidemo" */ '../views/ApiDemo.vue'),
+  },
 ];
 
 const router = new VueRouter({
