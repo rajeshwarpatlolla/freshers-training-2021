@@ -14,6 +14,8 @@
     <button @click="changeStyle('red')">Change To Red Background</button>
     <button @click="changeStyle('green')">Change To Green Background</button>
 
+    <div>This is only in develop branch</div>
+
     <div v-for="(user, index) of listOfUsers" :key="index">
       {{ user.name }}
     </div>
