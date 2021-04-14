@@ -28,6 +28,11 @@ const routes = [
     name: 'ApiDemo',
     component: () => import(/* webpackChunkName: "apidemo" */ '../views/ApiDemo.vue'),
   },
+  {
+    path: '/vuexdemo',
+    name: 'VuexDemo',
+    component: () => import(/* webpackChunkName: "VuexDemo" */ '../views/VuexDemo.vue'),
+  },
 ];
 
 const router = new VueRouter({

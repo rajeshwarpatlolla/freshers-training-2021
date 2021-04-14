@@ -13,10 +13,16 @@
     </h1>
     <button @click="changeStyle('red')">Change To Red Background</button>
     <button @click="changeStyle('green')">Change To Green Background</button>
+
+    <div v-for="(user, index) of listOfUsers" :key="index">
+      {{ user.name }}
+    </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 import Header from '../components/Header.vue';
 
 export default {
@@ -29,6 +35,9 @@ export default {
   },
   components: {
     Header,
+  },
+  computed: {
+    ...mapGetters(['listOfUsers']),
   },
   methods: {
     changeColor(val) {
